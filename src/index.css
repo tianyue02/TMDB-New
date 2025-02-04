@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+#root {
+  background-image: linear-gradient(rgba(0, 0, 0, .85) 15%, rgba(0, 0, 0, .2) 40%, black 90%);
+  background-attachment: fixed;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input::-webkit-input-placeholder{
+ font-size: 18px;
+}
+
+.searchBoxInput{
+  color: white;
+}
+
+.searchBoxInput:focus {
+  outline: none;
+}
+
+.matches-list {
+  padding: 0;
+  list-style-type: none;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: all 0.5s ease-out;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  margin-top: 20px;
+}
+
+.search-box {
+  width: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.movie-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fafafa;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 15px;
+}
+
+.movie-info {
+  margin: 20px;
+}
